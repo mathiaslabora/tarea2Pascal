@@ -1,0 +1,4 @@
+34c34
+< El texto tiene 128 carácteres.
+---
+> El texto tiene 4684712 carácteres.

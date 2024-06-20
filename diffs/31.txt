@@ -1,0 +1,6 @@
+16,18c16
+< Columna:18
+< P[0mr[0mo[0mg[0mr[0ma[0mm[0ma[0mc[0mi[0mo[0mn[0m [0m1[0m [0m-[0m [0mc[0mu[0mr[0ms[0mo[0m [0m2[0m0[0m2[0m4[0m [0m-[0m [0mp[0mr[0mi[0mm[0me[0mr[0m [0ms[0me[0mm[0me[0ms[0mt[0mr[0me[0m
+<                  ^
+---
+> No se encuentra

@@ -7,16 +7,19 @@ function todosTienenFormatoEnLinea ( tfmt : TipoFormato; ini, fin : RangoColumna
                   1 <= fin <= ln.tope }
 var
   i: integer;
+  verifForm: Boolean;
 begin
   i:=ini;
-  todosTienenFormatoEnLinea := true;
-   while (i <= fin) and (todosTienenFormatoEnLinea) do
+  verifForm := true;
+  
+  while (i <= fin) and verifForm do
   begin
+    if (not ln.cars[i].fmt[tfmt]) then
+    verifForm := false;
 
-    if ln.cars[i].fmt[tfmt]  then
-      todosTienenFormatoEnLinea := false;
-    i := i + 1;
+  i := i + 1;
   end;
+  todosTienenFormatoEnLinea:=verifForm;
 end;
 
 
@@ -29,14 +32,39 @@ procedure aplicarFormatoEnLinea ( tfmt : TipoFormato; ini, fin : RangoColumna
 
   Precondiciones: 1 <= ini <= ln.tope
                   1 <= fin <= ln.tope }
+var 
+      i: integer;
 begin
+i:=ini;
+  if todosTienenFormatoEnLinea(tfmt,ini, fin,ln) then 
+  begin
+    for i:=ini to fin do
+      begin
+        ln.cars[i].fmt[tfmt]:=false;
+      end
+  end
+  else
+      ln.cars[i].fmt[tfmt]:=true;
 end;
 
 
 
 function contarCaracteresEnTexto ( txt : Texto ) : integer;
-{ Retorna la cantidad de caracteres que tiene el texto `txt` }
+var
+  count,i: integer;
+  actual: Texto;
 begin
+  count := 0;
+  actual := txt;
+  while actual <> nil do
+  begin
+    for i:=1 to actual^.info.tope do
+    begin
+      count := count + 1;  
+    end;
+    actual := actual^.sig; 
+  end;
+  contarCaracteresEnTexto := count; 
 end;
 
 

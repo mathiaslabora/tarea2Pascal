@@ -1,0 +1,4 @@
+71c71
+< El texto tiene 1892 carácteres.
+---
+> El texto tiene 4684712 carácteres.

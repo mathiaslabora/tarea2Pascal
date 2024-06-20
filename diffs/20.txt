@@ -1,0 +1,10 @@
+90,91c90,91
+< 1. T[0mI[0mT[0mU[0mL[0mO[0m:[0m [0mM[0mA[0mR[0mT[0mI[0mN[0m [0mF[0mI[0mE[0mR[0mR[0mO[0m
+< 2. A[0mU[0mT[0mO[0mR[0m:[0m [0mJ[0mO[0mS[0mE[0m [0mH[0mE[0mR[0mN[0mA[0mN[0mD[0mE[0mZ[0m
+---
+> 1. T[0mI[0mT[0mU[0mL[0mO[0m:[0m [0m
+> 2. 
+105c105
+< 16. y[0m [0ma[0mc[0ml[0ma[0mr[0me[0mn[0m [0mm[0mi[0m [0me[0mn[0mt[0me[0mn[0md[0mi[0mm[0mi[0me[0mn[0mt[0mo[0m.[0m
+---
+> 16. y[0m [0ma[0mc[0ml[0ma[0mr[0me[0mn[0m [0m.[0m
